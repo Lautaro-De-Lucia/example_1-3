@@ -19,12 +19,14 @@ int main()
     while (true) {
 
         if ( gasDetector || overTempDetector ) {
+            printf("%s\n", "Escape de gas o sobre-temperatura detectada.");
             alarmState = ON;
         }
 
         alarmLed = alarmState;
 
         if ( alarmOffButton ) {
+            printf("%s\n", "Todo en orden.");
             alarmState = OFF;
         }
     }
