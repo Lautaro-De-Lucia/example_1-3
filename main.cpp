@@ -6,14 +6,14 @@
 
 int main()
 {
-    DigitalIn gasDetector(D2);
-    DigitalIn overTempDetector(D3);
-    DigitalIn alarmOffButton(BUTTON1);
+    // DigitalIn gasDetector(D2);
+    // DigitalIn overTempDetector(D3);
+    // DigitalIn alarmOffButton(BUTTON1);
+    
+    //DigitalOut alarmLed(LED1);
 
-    DigitalOut alarmLed(LED1);
-
-    gasDetector.mode(PullDown);
-    overTempDetector.mode(PullDown);
+    //gasDetector.mode(PullDown);
+    //overTempDetector.mode(PullDown);
 
     alarmLed = OFF;
 
